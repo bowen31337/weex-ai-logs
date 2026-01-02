@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-01-02T15:46:13.925434Z",
+  "order_id": "701995508813530029",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+exit_manager_v1",
+  "input_features": {
+    "exit_level": 1,
+    "position_percentage": 0.6,
+    "target_roi": null,
+    "position_side": "LONG",
+    "entry_price": 0.13322,
+    "exit_price": 0.1354,
+    "partial_size": 120.0,
+    "tech_rsi_14": 60.90766028942783,
+    "tech_adx": 73.65639768010902,
+    "tech_atr_14": 0.0004307699806366185,
+    "tech_macd": 0.00045695111205340533,
+    "tech_bb_position": 0.7544939931278476
+  },
+  "output_prediction": {
+    "signal": "EXIT_LONG",
+    "confidence": 0.0,
+    "raw_model_outputs": {
+      "action": "partial_take_profit"
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The DOGEUSDT pair is currently in a consolidation phase, as indicated by its RSI at 60.9 and ADX at 73.7, suggesting sideways movement rather than a breakout or pullback. The MACD line remains within the neutral zero zone, adding to indecision. However, the high confidence level of 50% coupled with strong support from both indicators suggests that holding this position is prudent.",
+  "symbol": "cmt_dogeusdt",
+  "position_size": 100.0,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk check: Close order - bypassing risk checks for position exit",
+      "Trading status: Trading allowed within risk limits",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_LONG",
+    "price": 0.1354,
+    "leverage": 2,
+    "client_oid": "80d0a399-ee5e-4cfc-81b4-0532fc7de696",
+    "symbol": "cmt_dogeusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": 0.021664,
+    "estimated_exit_fee": 0.021664,
+    "total_estimated_fees": 0.043328
+  },
+  "log_metadata": {
+    "log_version": "2.3",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1767368774004,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-02T15:46:13.925522Z",
+    "error_details": null
+  }
+}
