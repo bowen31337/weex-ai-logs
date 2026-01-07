@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-01-07T09:42:51.540709Z",
+  "order_id": "703715992047453101",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+exit_manager_v1",
+  "input_features": {
+    "exit_level": 1,
+    "position_percentage": 0.33,
+    "target_roi": null,
+    "position_side": "SHORT",
+    "entry_price": 138.94,
+    "exit_price": 136.69,
+    "partial_size": 0.033,
+    "tech_rsi_14": 14.58548004666946,
+    "tech_adx": 75.66535721847238,
+    "tech_atr_14": 0.21880544220213116,
+    "tech_macd": -0.47860593656952233,
+    "tech_bb_position": 0.03854609889825588
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.0,
+    "raw_model_outputs": {
+      "action": "partial_take_profit"
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The SOLUSDT HOLD signal indicates a strong buy opportunity with confidence at 50.0%. The RSI is currently at 14.6, suggesting mild overbought conditions; MACD shows a negative divergence, indicating potential for further decline; ADX stands at 75.7, which suggests significant market strength and consolidation pressure; ATR is not available, but it's crucial for identifying trend direction; BB is at 0.04, indicating weak price action around the midpoint; Volatility (Vol) is also not provided, so no information on volume can be derived.\n\nThe combination of these indicators points towards a potential reversal or consolidation phase in the market. The mild overbought RSI and negative MACD divergence suggest that the current upward trend may be weakening.",
+  "symbol": "cmt_solusdt",
+  "position_size": 0.1,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk check: Close order - bypassing risk checks for position exit",
+      "Trading status: Trading allowed within risk limits",
+      "Leverage set: 3x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": 136.69,
+    "leverage": 3,
+    "client_oid": "41cfff3e-b020-479c-b1f6-40445e0d0edb",
+    "symbol": "cmt_solusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": 0.032805600000000004,
+    "estimated_exit_fee": 0.032805600000000004,
+    "total_estimated_fees": 0.06561120000000001
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1767778971619,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-07T09:42:51.540785Z",
+    "error_details": null
+  }
+}
