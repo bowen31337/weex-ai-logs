@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-01-07T15:19:50.307479Z",
+  "order_id": "703800799515378605",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+exit_manager_v1",
+  "input_features": {
+    "exit_level": 1,
+    "position_percentage": 0.6,
+    "target_roi": null,
+    "position_side": "SHORT",
+    "entry_price": 900.77,
+    "exit_price": 896.62,
+    "partial_size": 0.06,
+    "tech_rsi_14": 28.775497815107627,
+    "tech_adx": 50.9223455911998,
+    "tech_atr_14": 1.305344986549597,
+    "tech_macd": -1.420587315563921,
+    "tech_bb_position": -0.010373825392684097
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.0,
+    "raw_model_outputs": {
+      "action": "partial_take_profit"
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The BNBUSDT HOLD signal indicates a potential buy opportunity due to the combination of RSI at 28.8, MACD at -1.4206, and ADX at 50.9. The RSI is below the overbought zone, suggesting that the market may be in a consolidation phase or approaching an oversold state. The negative MACD line and low ADX indicate weak momentum and reduced volatility, which could point to a possible reversal. However, with a confidence level of 50%, this signal should be considered cautiously. ML ensemble validation suggests that while there is a slight bullish trend, the market's overall health and direction are not strongly supported by recent data.",
+  "symbol": "cmt_bnbusdt",
+  "position_size": 0.1,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk check: Close order - bypassing risk checks for position exit",
+      "Trading status: Trading allowed within risk limits",
+      "Leverage set: 3x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": 896.62,
+    "leverage": 3,
+    "client_oid": "3c37359a-15fd-427f-a5f3-5ca2ad367dd9",
+    "symbol": "cmt_bnbusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": 0.2151888,
+    "estimated_exit_fee": 0.2151888,
+    "total_estimated_fees": 0.4303776
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1767799190389,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-07T15:19:50.307588Z",
+    "error_details": null
+  }
+}
