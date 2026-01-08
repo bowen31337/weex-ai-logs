@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-01-08T06:15:03.323293Z",
+  "order_id": "704026082843558829",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+exit_manager_v1",
+  "input_features": {
+    "exit_level": 1,
+    "position_percentage": 0.33,
+    "target_roi": null,
+    "position_side": "SHORT",
+    "entry_price": 0.14676666666666666,
+    "exit_price": 0.14436,
+    "partial_size": 99.0,
+    "tech_rsi_14": 33.42455454307289,
+    "tech_adx": 58.09787112987302,
+    "tech_atr_14": 0.0002483748134375068,
+    "tech_macd": -0.0003945194816430686,
+    "tech_bb_position": 0.22716535584584024
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.0,
+    "raw_model_outputs": {
+      "action": "partial_take_profit"
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The DOGEUSDT HOLD signal indicates a strong buy opportunity due to the combination of RSI at 33.4, MACD with a negative value (-0.0004), and an ADX reading of 58.1. The RSI is within the oversold range, suggesting potential for price recovery. The positive MACD line moving below zero suggests bearish momentum. The high ADX indicates strong market volatility, which could indicate a breakout or consolidation phase. The lack of significant changes in other indicators (ATR, BB, Vol) supports this decision. This signal is moderately confident at 50%, indicating that while the conditions are favorable, there's room for additional confirmation before committing to the trade.\n\nCRITICAL LENGTH REQUIREMENT: Write EXACTLY 800-900 characters (count carefully!).",
+  "symbol": "cmt_dogeusdt",
+  "position_size": 100.0,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk check: Close order - bypassing risk checks for position exit",
+      "Trading status: Trading allowed within risk limits",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": 0.14436,
+    "leverage": 2,
+    "client_oid": "31e04efe-db0e-43e8-9673-200018ae843d",
+    "symbol": "cmt_dogeusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": 0.0230976,
+    "estimated_exit_fee": 0.0230976,
+    "total_estimated_fees": 0.0461952
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1767852903502,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-08T06:15:03.323403Z",
+    "error_details": null
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-01-08T06:15:08.095641Z",
+  "order_id": "704026106398770093",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+exit_manager_v1",
+  "input_features": {
+    "exit_level": 2,
+    "position_percentage": 0.33,
+    "target_roi": null,
+    "position_side": "FLAT",
+    "entry_price": 0.0,
+    "exit_price": 0.14436,
+    "partial_size": 0.0,
+    "tech_rsi_14": 33.42455454307289,
+    "tech_adx": 58.09787112987302,
+    "tech_atr_14": 0.0002483748134375068,
+    "tech_macd": -0.0003945194816430686,
+    "tech_bb_position": 0.22716535584584024
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.0,
+    "raw_model_outputs": {
+      "action": "partial_take_profit"
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The DOGEUSDT HOLD signal indicates a strong buy opportunity with confidence at 50.0%. The RSI is currently at 33.4, suggesting that the market may be overbought but not yet oversold. This could indicate an upcoming price correction or consolidation phase. The MACD line is slightly negative (-0.0004), indicating a bearish momentum. However, the ADX (Average Directional Index) at 58.1 suggests strong overall trend strength, which can support a potential breakout move higher if confirmed by other indicators.\n\nThe ATR (Average True Range) and BB (Bollinger Bands) are not provided but suggest that the market is within normal range for its volatility level. The Volatility (Vol) data is missing, indicating it may be irrelevant or unavailable in this context. \n\nGiven these technical readings, a hold strategy seems appropriate until further confirmation from other indicators such as candles, volume patterns, and broader economic factors.",
+  "symbol": "cmt_dogeusdt",
+  "position_size": 100.0,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk check: Close order - bypassing risk checks for position exit",
+      "Trading status: Trading allowed within risk limits",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": 0.14436,
+    "leverage": 2,
+    "client_oid": "361be2a2-b9fa-44bd-8588-dd5255e25e78",
+    "symbol": "cmt_dogeusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": 0.0230976,
+    "estimated_exit_fee": 0.0230976,
+    "total_estimated_fees": 0.0461952
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1767852908176,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-08T06:15:08.095719Z",
+    "error_details": null
+  }
+}
