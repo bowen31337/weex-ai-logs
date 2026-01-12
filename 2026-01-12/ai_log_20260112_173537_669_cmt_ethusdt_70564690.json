@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-01-12T17:35:37.527237Z",
+  "order_id": "705646904704238509",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+exit_manager_v1",
+  "input_features": {
+    "exit_level": 1,
+    "position_percentage": 0.6,
+    "target_roi": null,
+    "position_side": "SHORT",
+    "entry_price": 3135.67,
+    "exit_price": 3087.52,
+    "partial_size": 0.003,
+    "tech_rsi_14": 16.948133285885035,
+    "tech_adx": 76.72257817309554,
+    "tech_atr_14": 6.064097440114577,
+    "tech_macd": -9.146172221414417,
+    "tech_bb_position": 0.03803670864243678
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.0,
+    "raw_model_outputs": {
+      "action": "partial_take_profit"
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The Trading Signal for ETHUSDT is a Hold based on the confidence level of 50.0%. The RSI (Relative Strength Index) at 16.9 indicates mild overbought conditions, suggesting potential consolidation or reversal. The MACD (Moving Average Convergence Divergence) with a value of -9.1462 suggests a bearish momentum that could lead to price correction. The ADX (Average Directional Movement Index) at 76.7 is high, indicating strong market direction but also potential overbought conditions. The ATR (Average True Range) and BB (Bollinger Bands) are not provided, which makes it difficult to assess the volatility or trend strength. Despite these indicators pointing towards a possible sell signal, the confidence level of 50% suggests that further analysis is needed before making a decision.\n\nCRITICAL LENGTH REQUIREMENT: Write EXACTLY 800-900 characters (count carefully!).",
+  "symbol": "cmt_ethusdt",
+  "position_size": 0.003,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk check: Close order - bypassing risk checks for position exit",
+      "Trading status: Trading allowed within risk limits",
+      "Leverage set: 4x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": 3087.52,
+    "leverage": 4,
+    "client_oid": "47ec759f-2c18-4a52-8449-50261d7f9886",
+    "symbol": "cmt_ethusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": 0.029640192000000003,
+    "estimated_exit_fee": 0.029640192000000003,
+    "total_estimated_fees": 0.059280384000000005
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1768239337617,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-12T17:35:37.527312Z",
+    "error_details": null
+  }
+}
