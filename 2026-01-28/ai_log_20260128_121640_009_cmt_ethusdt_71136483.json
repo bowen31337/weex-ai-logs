@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T12:16:39.879216Z",
+  "order_id": "711364833588544429",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "SHORT",
+    "new_side": "LONG"
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.7606918522853955,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.7606918522853955
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The ETHUSDT pair is currently in an oversold state as indicated by the RSI at 34, which suggests a potential for a strong upward move. The MACD line is below the signal line with a negative divergence, indicating that the price may not be following the trend correctly. Additionally, the ADX is low at 15, suggesting weak market momentum and possibly an oversold condition. Despite these indicators pointing to a possible bullish reversal, the high confidence of 76.1% indicates that further confirmation through additional data points or higher volume would be necessary before taking a short position.\n\nCRITICAL LENGTH REQUIREMENT: Write EXACTLY 800-900 characters (count carefully!).",
+  "symbol": "cmt_ethusdt",
+  "position_size": 0.034,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": null,
+    "leverage": 2,
+    "client_oid": "519e805a-3663-43f5-8645-d8c6200be0c8",
+    "symbol": "cmt_ethusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769602599965,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T12:16:39.879252Z",
+    "error_details": null
+  }
+}
