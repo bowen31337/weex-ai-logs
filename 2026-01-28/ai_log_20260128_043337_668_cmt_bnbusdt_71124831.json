@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T04:33:37.537060Z",
+  "order_id": "711248311608148909",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "SHORT",
+    "new_side": "LONG"
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.7,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.7
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The BNBUSDT EXIT_SHORT signal is based on a confidence level of 70%, indicating that while the market conditions are not ideal, there's still some potential for short-term profit. The absence of RSI, MACD, ADX, ATR, BB, and Vol data suggests that these key technical indicators may be unreliable or non-existent in this specific context.\n\nThe lack of RSI (Relative Strength Index) could indicate a lack of trend strength, while the absence of MACD (Moving Average Convergence Divergence), ADX (Average Directional Movement Index), ATR (Average True Range), BB (Bollinger Bands), and Vol (Volume) suggests that these indicators might not be providing useful information in this scenario. This could indicate a market where traditional technical analysis methods may struggle to provide reliable insights.\n\nDespite the absence of these indicators, the confidence level remains high due to the overall stability of the market conditions.",
+  "symbol": "cmt_bnbusdt",
+  "position_size": 0.4,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": null,
+    "leverage": 2,
+    "client_oid": "5f055184-e242-4ed7-841f-a9db8f33d795",
+    "symbol": "cmt_bnbusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769574817617,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T04:33:37.537099Z",
+    "error_details": null
+  }
+}
