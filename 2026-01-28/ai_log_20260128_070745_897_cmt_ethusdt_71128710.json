@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T07:07:45.768660Z",
+  "order_id": "711287107108209581",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "LONG",
+    "new_side": "SHORT"
+  },
+  "output_prediction": {
+    "signal": "EXIT_LONG",
+    "confidence": 0.6,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.6
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The ETHUSDT market is currently in a consolidation phase with no significant changes observed in the RSI (68%), MACD (12), ADX (35), ATR (45), BB (1.5), and Vol (0.7). Despite these indicators, my confidence stands at 60%, suggesting that further analysis is needed to make a decision.\n\nThe RSI of 68% indicates mild overbought territory, while the MACD with a reading of 12 suggests a balanced approach without strong momentum signals. The ADX of 35 and ATR of 45 suggest moderate volatility but not extreme conditions. The BB channel is within normal limits, indicating that price action remains contained.\n\nThe lack of significant changes in these indicators points to a market that might be consolidating or trending sideways rather than breaking out. Given the current state, my confidence level suggests that further analysis would be necessary before making an exit decision.",
+  "symbol": "cmt_ethusdt",
+  "position_size": 0.136,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_LONG",
+    "price": null,
+    "leverage": 2,
+    "client_oid": "2e94c80b-b736-45ee-bc92-4bce1c237447",
+    "symbol": "cmt_ethusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769584065847,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T07:07:45.768691Z",
+    "error_details": null
+  }
+}
