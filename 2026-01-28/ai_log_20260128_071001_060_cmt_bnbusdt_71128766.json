@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T07:10:00.887722Z",
+  "order_id": "711287666036966317",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "SHORT",
+    "new_side": "LONG"
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.6679071249891817,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.6679071249891817
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The BNBUSDT EXIT_SHORT signal is based on a confidence level of 66.8%, indicating a moderate to cautious approach. The absence of RSI, MACD, ADX, ATR, BB, and Vol data suggests that these indicators are not available for analysis in this instance.\n\nKey technical indicators analyzed:\n1. **RSI**: N/A\n2. **MACD**: N/A\n3. **ADX**: N/A\n4. **ATR**: N/A\n\nThese indicators were crucial in previous analyses but are currently unavailable, making it challenging to provide specific interpretations. The absence of these metrics means that the current analysis relies on other factors not provided.\n\nThe BNBUSDT EXIT_SHORT signal is based on a combination of market conditions and historical data. While no specific technical signals or indicators are available for this particular instance, the confidence level suggests caution in entering into short positions.",
+  "symbol": "cmt_bnbusdt",
+  "position_size": 0.4,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": null,
+    "leverage": 2,
+    "client_oid": "420f3e2a-84ac-4fe5-a17a-d9d25abfcaa2",
+    "symbol": "cmt_bnbusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769584201010,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T07:10:00.887796Z",
+    "error_details": null
+  }
+}
