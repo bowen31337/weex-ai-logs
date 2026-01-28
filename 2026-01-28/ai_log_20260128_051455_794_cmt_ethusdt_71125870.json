@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T05:14:55.663379Z",
+  "order_id": "711258705408033709",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "SHORT",
+    "new_side": "LONG"
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.6700052771239541,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.6700052771239541
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The trading signal for ETHUSDT EXIT_SHORT is based on a confidence level of 67%, indicating a cautious approach to the market. The lack of RSI, MACD, ADX, ATR, BB, and Vol data suggests that these indicators are not available or relevant in this context. However, with no specific technical analysis parameters provided, it's challenging to make an informed decision without additional information.\n\nThe absence of RSI (Relative Strength Index) could indicate a lack of momentum or strength in the market, while MACD (Moving Average Convergence Divergence), ADX (Average Directional Movement Index), ATR (Average True Range), BB (Bollinger Bands), and Volatility (Volume) are crucial for identifying trends and volatility.",
+  "symbol": "cmt_ethusdt",
+  "position_size": 0.206,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": null,
+    "leverage": 2,
+    "client_oid": "f44854a4-b3b2-4bb9-a640-942340517a82",
+    "symbol": "cmt_ethusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769577295742,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T05:14:55.663458Z",
+    "error_details": null
+  }
+}
