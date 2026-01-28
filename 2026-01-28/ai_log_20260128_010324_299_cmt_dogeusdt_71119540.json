@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T01:03:24.165606Z",
+  "order_id": "711195401415295917",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "SHORT",
+    "new_side": "LONG"
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.7,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.7
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The DOGEUSDT EXIT_SHORT signal is based on a confidence level of 70%, indicating that while the market conditions are not strongly favorable, there's still some potential for short-term profit. The lack of RSI, MACD, ADX, ATR, BB, and Vol data suggests that these indicators might be lagging or non-existent in this particular analysis.\n\nThe absence of a clear trend line on the price chart indicates that the market is moving randomly without any discernible direction. This randomness could suggest that short-term strategies are not likely to yield significant profits due to the lack of momentum or support/resistance levels.\n\nHowever, the high confidence level suggests that there might be some underlying factors driving the market's movement that we're currently missing from our data set.",
+  "symbol": "cmt_dogeusdt",
+  "position_size": 1500.0,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": null,
+    "leverage": 2,
+    "client_oid": "01200094-ddd4-4a52-9dc1-80d3f566d843",
+    "symbol": "cmt_dogeusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769562204248,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T01:03:24.165646Z",
+    "error_details": null
+  }
+}
