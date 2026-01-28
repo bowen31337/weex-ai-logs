@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T07:41:07.452312Z",
+  "order_id": "711295498832577453",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "LONG",
+    "new_side": "SHORT"
+  },
+  "output_prediction": {
+    "signal": "EXIT_LONG",
+    "confidence": 0.6,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.6
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The Binance Coin (BNB) USDT pair is currently in an exit-long signal with a confidence level of 60%. The RSI, MACD, ADX, ATR, BB, and Vol indicators are all N/A, indicating that the current market conditions do not provide clear signals. However, the lack of these technical indicators suggests that the price action might be more influenced by fundamental factors or other external market forces rather than traditional technical analysis.\n\nThe RSI is a leading indicator that measures the strength of an asset's momentum. A reading above 70 indicates overbought conditions, suggesting potential for a pullback. The MACD (Moving Average Convergence Divergence) is another oscillator that shows the relationship between two moving averages. An upward trend in both signals could indicate a bullish move ahead.",
+  "symbol": "cmt_bnbusdt",
+  "position_size": 0.6,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 3x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_LONG",
+    "price": null,
+    "leverage": 3,
+    "client_oid": "ce397461-5400-4ddc-90dd-33d3e801e8a7",
+    "symbol": "cmt_bnbusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769586067553,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T07:41:07.452356Z",
+    "error_details": null
+  }
+}
