@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T04:44:18.188767Z",
+  "order_id": "711250999821468589",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "LONG",
+    "new_side": "SHORT"
+  },
+  "output_prediction": {
+    "signal": "EXIT_LONG",
+    "confidence": 0.6024910726766081,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.6024910726766081
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The trading analysis for the ETHUSDT EXIT_LONG signal indicates a strong buy opportunity with confidence at 60.2%. The RSI is currently in overbought territory, suggesting potential overvaluation and a possible reversal. MACD shows a bullish crossover, indicating an upward momentum shift. ADX measures market strength and volatility; it's currently above the neutral level of 30, signaling higher price action ahead. ATR (Average True Range) indicates recent price range changes, showing increased volatility. Volatility is high, suggesting heightened trading activity. The ML ensemble validation confirms this signal as a strong buy opportunity with significant confidence.\n\nCRITICAL: Always complete your final sentence with a period.",
+  "symbol": "cmt_ethusdt",
+  "position_size": 0.161,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 4x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_LONG",
+    "price": null,
+    "leverage": 4,
+    "client_oid": "6dfb2d3d-4c43-4907-a215-234200485ce7",
+    "symbol": "cmt_ethusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769575458266,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T04:44:18.188805Z",
+    "error_details": null
+  }
+}
