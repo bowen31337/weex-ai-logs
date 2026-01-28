@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T02:15:39.490157Z",
+  "order_id": "711213590392079277",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "LONG",
+    "new_side": "SHORT"
+  },
+  "output_prediction": {
+    "signal": "EXIT_LONG",
+    "confidence": 0.6,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.6
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The DOGEUSDT signal is based on a confidence level of 60%, indicating moderate certainty in the market's direction. The lack of RSI, MACD, ADX, ATR, BB, and Vol data suggests that these indicators are not available for analysis at this time, which could limit our ability to make an informed decision.\n\nThe absence of RSI (Relative Strength Index) means we cannot assess the strength or weakness of the market's momentum. The MACD (Moving Average Convergence Divergence) is also absent, preventing us from identifying trends and potential reversals. The ADX (Average Directional Movement Index), which measures trend strength, is not available either, making it impossible to gauge the overall direction of the market.\n\nThe absence of ATR (Average True Range), a measure of volatility, means we cannot determine how volatile the market has been in recent periods.",
+  "symbol": "cmt_dogeusdt",
+  "position_size": 1200.0,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_LONG",
+    "price": null,
+    "leverage": 2,
+    "client_oid": "5864f35b-69b9-483c-9785-12df7001f340",
+    "symbol": "cmt_dogeusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769566539569,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T02:15:39.490192Z",
+    "error_details": null
+  }
+}
