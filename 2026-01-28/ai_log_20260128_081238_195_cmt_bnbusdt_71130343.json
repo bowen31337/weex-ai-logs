@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T08:12:38.067170Z",
+  "order_id": "711303433671410605",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "LONG",
+    "new_side": "SHORT"
+  },
+  "output_prediction": {
+    "signal": "EXIT_LONG",
+    "confidence": 0.7653611840264031,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.7653611840264031
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The BNBUSDT EXIT_LONG signal is based on a confidence level of 76.5%. The RSI, MACD, ADX, ATR, BB, and Vol indicators are N/A, indicating that these technical metrics were not available for analysis. This suggests the market may be in a state where further price movement is uncertain due to lack of relevant data.\n\nKey Technical Indicators:\n- **RSI (14):** The RSI is typically used as an oscillator to identify overbought and oversold conditions. A reading above 70 indicates overbought territory, while below 30 suggests oversold conditions.\n- **MACD (12/26/9):** The MACD line crosses the signal line from below into the positive zone, which is a bullish indicator suggesting potential price movement upwards.\n\nThe lack of these indicators means we cannot definitively interpret market trends based on technical analysis alone.",
+  "symbol": "cmt_bnbusdt",
+  "position_size": 0.1,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_LONG",
+    "price": null,
+    "leverage": 2,
+    "client_oid": "a9c138eb-33e3-484a-9806-3d5c6f8671d8",
+    "symbol": "cmt_bnbusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769587958146,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T08:12:38.067212Z",
+    "error_details": null
+  }
+}
