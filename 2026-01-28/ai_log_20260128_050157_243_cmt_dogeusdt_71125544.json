@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-28T05:01:57.110106Z",
+  "order_id": "711255440524051373",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "SHORT",
+    "new_side": "LONG"
+  },
+  "output_prediction": {
+    "signal": "EXIT_SHORT",
+    "confidence": 0.7,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.7
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "The DOGEUSDT EXIT_SHORT signal is based on a confidence level of 70%, indicating that while the market conditions are not ideal, there's still enough evidence to consider exiting short positions. The RSI (Relative Strength Index) is at 35, which suggests mild overbought territory; however, it hasn't crossed above the 70 threshold yet, suggesting a possible reversal. The MACD (Moving Average Convergence Divergence) line remains below its signal line, indicating bearish momentum without confirmation of a trend change. The ADX (Average Directional Index) is at 25, which indicates weak market direction but no significant divergence or strength. The ATR (Average True Range) and Volatility indicators show consistent levels, suggesting stable market conditions with low volatility. Despite these neutral technical readings, the combination of mild overbought RSI and bearish MACD signals suggests a potential for short-term reversal in DOGEUSDT.",
+  "symbol": "cmt_dogeusdt",
+  "position_size": 2900.0,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 5x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_SHORT",
+    "price": null,
+    "leverage": 5,
+    "client_oid": "17d85700-0d69-43da-aec5-c277c186f4cc",
+    "symbol": "cmt_dogeusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769576517190,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-28T05:01:57.110140Z",
+    "error_details": null
+  }
+}
