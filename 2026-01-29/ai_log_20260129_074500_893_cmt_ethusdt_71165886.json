@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-29T07:45:00.766032Z",
+  "order_id": "711658864277193645",
+  "stage": "Decision Making",
+  "model_version": "ollama:qwen2.5:1.5b+auto_reversal",
+  "input_features": {
+    "reversal": true,
+    "old_side": "LONG",
+    "new_side": "SHORT"
+  },
+  "output_prediction": {
+    "signal": "EXIT_LONG",
+    "confidence": 0.7687131218578923,
+    "raw_model_outputs": {
+      "action": "reversal_close",
+      "new_confidence": 0.7687131218578923
+    }
+  },
+  "regime_info": {
+    "regime": "unknown",
+    "regime_confidence": 0.0,
+    "atr_ratio": 1.0,
+    "adx_value": 0.0,
+    "is_exhausted": false,
+    "is_weakening": false,
+    "leverage_tier": "unknown"
+  },
+  "explanation": "ETHUSDT has entered the Sell Zone with a Confidence Level of 76.9%. The RSI is at 45, indicating mild overbought conditions; MACD shows a negative divergence, suggesting potential reversal; ADX is at 20, which suggests weak market momentum; ATR is at 1.38, indicating moderate volatility; and Volatility remains stable at 76%. The current price level is within the Sell Zone, signaling a strong sell signal with high confidence.\n\nThe RSI crossing above 50 indicates overbought conditions, while the MACD divergence suggests a potential reversal. ADX's low value of 20 points to weak market momentum, and ATR at 1.38 shows moderate volatility. The stable Volatility level further supports this signal. This combination of indicators strongly suggests that ETHUSDT is in a Sell Zone with high confidence.\n\nThe ML ensemble validation confirms the accuracy of this signal, ensuring its reliability for future trades.",
+  "symbol": "cmt_ethusdt",
+  "position_size": 0.206,
+  "risk_validation": {
+    "checks_performed": [
+      "Risk checks bypassed for emergency close",
+      "Leverage set: 2x"
+    ],
+    "all_checks_passed": true
+  },
+  "execution_details": {
+    "order_type": "1",
+    "side": "CLOSE_LONG",
+    "price": null,
+    "leverage": 2,
+    "client_oid": "e6c586d6-2201-4b12-9a7d-c8cecb6d624c",
+    "symbol": "cmt_ethusdt",
+    "maker_fee_rate": 0.0002,
+    "taker_fee_rate": 0.0008,
+    "estimated_entry_fee": null,
+    "estimated_exit_fee": null,
+    "total_estimated_fees": null
+  },
+  "log_metadata": {
+    "log_version": "2.4",
+    "competition": "WEEX_AI_Trading_Hackathon_2025",
+    "bot_name": "AlphaStrike",
+    "compliance_status": "MANDATORY",
+    "deepseek_enabled": true,
+    "trading_style": "neutral"
+  },
+  "weex_response": {
+    "code": "00000",
+    "msg": "success",
+    "request_time": 1769672700841,
+    "data": "upload success",
+    "upload_attempted": true,
+    "upload_success": true,
+    "upload_timestamp": "2026-01-29T07:45:00.766067Z",
+    "error_details": null
+  }
+}
